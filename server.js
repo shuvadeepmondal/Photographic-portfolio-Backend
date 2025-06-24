@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/gallery', require('./routes/galleryRoutes'));
 app.use('/api/contact', require('./routes/contactRoutes'));
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/dashboard', require('./routes/dashboardRoutes'));
 
 const connectDB = require('./config/db');
 connectDB();
